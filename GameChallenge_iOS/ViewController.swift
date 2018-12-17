@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         return true
     }
     
+    
+    
     @IBOutlet weak var showMyCard: UIImageView!
     
     @IBAction func tellMeSomething(_ sender: UIButton) {
