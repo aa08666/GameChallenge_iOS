@@ -22,7 +22,15 @@ class ViewController: UIViewController {
         showAnswer()
     }
     
+    @IBOutlet weak var myBackgroundImage: UIImageView!
     
+    @IBAction func imageChange(_ sender: UISwitch) {
+        if sender.isOn == true {
+            myBackgroundImage.image = UIImage(named: "Gu")
+        }else{
+            myBackgroundImage.image = UIImage(named: "hearthstone")
+        }
+    }
     
     func showAnswer(){
         if showMyCard.isHidden == true{
