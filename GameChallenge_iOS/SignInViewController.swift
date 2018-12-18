@@ -10,14 +10,29 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    @IBOutlet weak var nameTextField: UITextField!
     
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signInNameText: UITextField!
     
+    @IBOutlet weak var signInPasswordText: UITextField!
     
     @IBAction func signInButton(_ sender: UIButton) {
-        print("Name is \(nameTextField.text)")
-        print("Password is \(passwordTextField.text)")
+//        print("Name is \(nameTextField.text)")
+//        print("Password is \(passwordTextField.text)")
+        if let userName = UserDefaults.value(forKey: "userName") as? String {
+            if signInNameText.text == userName {
+                print("correct")
+            }else{
+                print("wrong")
+            }
+        }
+        if let userPassword = UserDefaults.value(forKey: "userPassword") as? String {
+            if signInPasswordText.text == userPassword {
+                print("correct")
+            }else{
+                print("wrong")
+            }
+        }
+        
     }
     
     

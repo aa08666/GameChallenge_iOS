@@ -24,6 +24,10 @@ class SignUpViewController: UIViewController {
 //        print("password is \(self.passwordTextField.text)")
 //        print("passwordcon is \(self.passwordConTextField.text)")
        user()
+//        nameTextField.text = ""
+//        emailTextField.text = ""
+//        passwordTextField.text = ""
+//        passwordConTextField.text = ""
     }
     
     let userDefault = UserDefaults.standard
