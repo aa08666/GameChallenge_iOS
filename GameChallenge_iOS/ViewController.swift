@@ -16,6 +16,13 @@ class ViewController: UIViewController {
         return true
     }
     
+    @IBAction func nameTextField(_ sender: UITextField) {
+        
+    }
+    
+    
+    
+    
     
     
     @IBOutlet weak var showMyCard: UIImageView!
@@ -53,6 +60,7 @@ class ViewController: UIViewController {
         
         
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,6 +12,7 @@
 		9061FA4E21C77D6700696CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9061FA4C21C77D6700696CED /* Main.storyboard */; };
 		9061FA5021C77D6800696CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9061FA4F21C77D6800696CED /* Assets.xcassets */; };
 		9061FA5321C77D6800696CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9061FA5121C77D6800696CED /* LaunchScreen.storyboard */; };
+		90D39D4A21C8A20E009A2F0F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9061FA4F21C77D6800696CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9061FA5221C77D6800696CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9061FA5421C77D6800696CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9061FA4F21C77D6800696CED /* Assets.xcassets */,
 				9061FA5121C77D6800696CED /* LaunchScreen.storyboard */,
 				9061FA5421C77D6800696CED /* Info.plist */,
+				90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */,
 			);
 			path = GameChallenge_iOS;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D39D4A21C8A20E009A2F0F /* SignUpViewController.swift in Sources */,
 				9061FA4B21C77D6700696CED /* ViewController.swift in Sources */,
 				9061FA4921C77D6700696CED /* AppDelegate.swift in Sources */,
 			);
