@@ -12,13 +12,23 @@ import GameKit
 
 class ViewController: UIViewController {
     
+    
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
-    
-    @IBAction func nameTextField(_ sender: UITextField) {
-        
-    }
+//  let userdefult = UserDefaults.standard
+//   let userDefaults = UserDefaults.standard
+//    var coins = 200
+//    let coinsKey = "conins"
+//
+//    func use(){
+//        //save
+//        userdefult.set(coins, forKey: coinsKey)
+//        //get
+//        userdefult.integer(forKey: coinsKey)
+//    }
+
     
     
     

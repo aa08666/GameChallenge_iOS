@@ -193,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="-604" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="lWk-iH-NjR">
             <objects>
-                <viewController id="6xi-0E-Ax9" sceneMemberID="viewController">
+                <viewController id="6xi-0E-Ax9" customClass="SignInViewController" customModule="GameChallenge_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TeZ-B5-LRu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,6 +210,9 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="6xi-0E-Ax9" eventType="touchUpInside" id="hEd-3p-Cqo"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Aa4-xQ-WGH">
                                 <rect key="frame" x="50" y="514" width="274" height="86"/>
@@ -266,6 +269,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XjY-AF-KCr"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Oil-CK-XgB" id="5Iw-Ma-SCq"/>
+                        <outlet property="passwordTextField" destination="AT6-fW-72F" id="Gct-Mq-s7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EL4-xJ-J4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

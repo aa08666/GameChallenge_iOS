@@ -19,13 +19,20 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordConTextField: UITextField!
     
     @IBAction func registerButton(_ sender: UIButton) {
-        print("name is \(String(describing: self.nameTextField.text))")
-        print("email is \(self.emailTextField.text)")
-        print("password is \(self.passwordTextField.text)")
-        print("passwordcon is \(self.passwordConTextField.text)")
+//        print("name is \(String(describing: self.nameTextField.text))")
+//        print("email is \(self.emailTextField.text)")
+//        print("password is \(self.passwordTextField.text)")
+//        print("passwordcon is \(self.passwordConTextField.text)")
+       user()
     }
     
-    
+    let userDefault = UserDefaults.standard
+    func user() {
+        userDefault.set(nameTextField.text, forKey: "userName")
+        userDefault.set(emailTextField.text, forKey: "userEmail")
+        userDefault.set(passwordTextField.text, forKey: "userPassword")
+        userDefault.set(passwordConTextField.text, forKey: "userPasswordCon")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
