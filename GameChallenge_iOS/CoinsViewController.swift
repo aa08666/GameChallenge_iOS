@@ -34,7 +34,7 @@ class CoinsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let coins = UserDefaults.standard.integer(forKey: "conins")
-        coinsLabel.text = "abc is \(coins)"
+        coinsLabel.text = "目前代幣餘額剩下 \(coins)"
 //        print(UserDefaults.standard.string(forKey: "userName"))
         // Do any additional setup after loading the view.
     }

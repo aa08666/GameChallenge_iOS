@@ -146,6 +146,7 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButton:" destination="08o-FQ-LWK" eventType="touchUpInside" id="kPw-XB-VoD"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="xEu-yh-tqZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAM-K0-MnA">
@@ -225,6 +226,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButton:" destination="6xi-0E-Ax9" eventType="touchUpInside" id="hEd-3p-Cqo"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="FDP-ds-BHa"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Aa4-xQ-WGH">
@@ -399,4 +401,7 @@
         <image name="hearthstone" width="3000" height="2000"/>
         <image name="icon" width="240" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="FDP-ds-BHa"/>
+    </inferredMetricsTieBreakers>
 </document>
