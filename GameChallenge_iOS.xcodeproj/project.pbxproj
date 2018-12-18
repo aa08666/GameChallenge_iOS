@@ -14,6 +14,7 @@
 		9061FA5321C77D6800696CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9061FA5121C77D6800696CED /* LaunchScreen.storyboard */; };
 		90D39D4A21C8A20E009A2F0F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */; };
 		90D39D4E21C8C147009A2F0F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D39D4D21C8C147009A2F0F /* SignInViewController.swift */; };
+		90D39D5021C8F80A009A2F0F /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D39D4F21C8F80A009A2F0F /* CoinsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9061FA5421C77D6800696CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		90D39D4D21C8C147009A2F0F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		90D39D4F21C8F80A009A2F0F /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9061FA5421C77D6800696CED /* Info.plist */,
 				90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */,
 				90D39D4D21C8C147009A2F0F /* SignInViewController.swift */,
+				90D39D4F21C8F80A009A2F0F /* CoinsViewController.swift */,
 			);
 			path = GameChallenge_iOS;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				90D39D4E21C8C147009A2F0F /* SignInViewController.swift in Sources */,
 				90D39D4A21C8A20E009A2F0F /* SignUpViewController.swift in Sources */,
+				90D39D5021C8F80A009A2F0F /* CoinsViewController.swift in Sources */,
 				9061FA4B21C77D6700696CED /* ViewController.swift in Sources */,
 				9061FA4921C77D6700696CED /* AppDelegate.swift in Sources */,
 			);

@@ -12,22 +12,15 @@ import GameKit
 
 class ViewController: UIViewController {
     
+//    let a = URLSession.shared.dataTask(with: <#T##URLRequest#>)
+//    let b = URLRequest(url: <#T##URL#>)
+//    let c = URL(fileURLWithPath: <#T##String#>)
     
     
     override var prefersStatusBarHidden: Bool{
         return true
     }
-//  let userdefult = UserDefaults.standard
-//   let userDefaults = UserDefaults.standard
-//    var coins = 200
-//    let coinsKey = "conins"
-//
-//    func use(){
-//        //save
-//        userdefult.set(coins, forKey: coinsKey)
-//        //get
-//        userdefult.integer(forKey: coinsKey)
-//    }
+
 
     
     
@@ -70,16 +63,26 @@ class ViewController: UIViewController {
         
         
     }
+    let conDefaults = UserDefaults.standard
+    let coinsKey = "conins"
+    
+    //玩一次錢就少10元
+    func use(){
+        var a = conDefaults.integer(forKey: coinsKey)
+        a -= 10
+        conDefaults.set(a, forKey: coinsKey)
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        use()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     

@@ -32,27 +32,25 @@ class SignUpViewController: UIViewController {
     
     let userDefault = UserDefaults.standard
     func user() {
+        
         userDefault.set(nameTextField.text, forKey: "userName")
         userDefault.set(emailTextField.text, forKey: "userEmail")
         userDefault.set(passwordTextField.text, forKey: "userPassword")
         userDefault.set(passwordConTextField.text, forKey: "userPasswordCon")
     }
+    //用UserDefaults存錢
+    func save(){
+        UserDefaults.standard.set(200, forKey: "conins")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //一註冊就有錢
+        save()
+        
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

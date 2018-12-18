@@ -18,21 +18,23 @@ class SignInViewController: UIViewController {
     @IBAction func signInButton(_ sender: UIButton) {
 //        print("Name is \(nameTextField.text)")
 //        print("Password is \(passwordTextField.text)")
-        if let userName = UserDefaults.value(forKey: "userName") as? String {
+        // UserDefaults.(standard).value set值的時候加standard，取值就要加
+        if let userName = UserDefaults.standard.value(forKey: "userName") as? String {
             if signInNameText.text == userName {
                 print("correct")
             }else{
                 print("wrong")
             }
         }
-        if let userPassword = UserDefaults.value(forKey: "userPassword") as? String {
+        if let userPassword = UserDefaults.standard.value(forKey: "userPassword") as? String {
             if signInPasswordText.text == userPassword {
                 print("correct")
             }else{
                 print("wrong")
             }
         }
-        
+        print(UserDefaults.standard.value(forKey: "userName"))
+        print(UserDefaults.standard.value(forKey: "userPassword"))
     }
     
     

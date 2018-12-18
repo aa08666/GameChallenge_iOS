@@ -138,16 +138,6 @@
                                     <constraint firstAttribute="bottom" secondItem="JFR-yD-qQs" secondAttribute="bottom" id="uGZ-fB-aD0"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAM-K0-MnA">
-                                <rect key="frame" x="94" y="543" width="188" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Already have an account?">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="6xi-0E-Ax9" kind="show" id="vhG-e3-og8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n1-5p-bxj">
                                 <rect key="frame" x="116" y="481" width="143" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
@@ -158,9 +148,31 @@
                                     <action selector="registerButton:" destination="08o-FQ-LWK" eventType="touchUpInside" id="kPw-XB-VoD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAM-K0-MnA">
+                                <rect key="frame" x="94" y="543" width="188" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Already have an account?">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6xi-0E-Ax9" kind="show" id="vhG-e3-og8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-QJ-68F">
+                                <rect key="frame" x="37" y="596" width="37" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Log">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X8K-VO-1FT" kind="show" id="zhy-xO-zWH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5ky-q6-war" firstAttribute="leading" secondItem="MOo-QJ-68F" secondAttribute="trailing" constant="31" id="9pa-TC-g9O"/>
+                            <constraint firstItem="efl-qp-57U" firstAttribute="bottom" secondItem="MOo-QJ-68F" secondAttribute="bottom" constant="35" id="BDS-12-nTZ"/>
                             <constraint firstItem="efl-qp-57U" firstAttribute="bottom" secondItem="5ky-q6-war" secondAttribute="bottom" constant="29" id="LYJ-tL-2Ab"/>
                             <constraint firstItem="9n1-5p-bxj" firstAttribute="top" secondItem="HFa-vK-dWS" secondAttribute="bottom" constant="26.5" id="LxS-gB-Yp0"/>
                             <constraint firstItem="efl-qp-57U" firstAttribute="trailing" secondItem="5ky-q6-war" secondAttribute="trailing" constant="105" id="MC3-Mt-yGN"/>
@@ -168,6 +180,7 @@
                             <constraint firstItem="5ky-q6-war" firstAttribute="top" secondItem="aAM-K0-MnA" secondAttribute="bottom" constant="17" id="Q5f-9c-Sac"/>
                             <constraint firstItem="efl-qp-57U" firstAttribute="trailing" secondItem="9n1-5p-bxj" secondAttribute="trailing" constant="116" id="QGC-q7-b2b"/>
                             <constraint firstItem="aAM-K0-MnA" firstAttribute="leading" secondItem="efl-qp-57U" secondAttribute="leading" constant="94" id="Qbl-Dc-cWu"/>
+                            <constraint firstItem="MOo-QJ-68F" firstAttribute="leading" secondItem="efl-qp-57U" secondAttribute="leading" constant="37" id="RJN-56-bTH"/>
                             <constraint firstItem="OVE-Z8-JLG" firstAttribute="top" secondItem="efl-qp-57U" secondAttribute="top" constant="18" id="Run-NR-jmZ"/>
                             <constraint firstItem="efl-qp-57U" firstAttribute="trailing" secondItem="OVE-Z8-JLG" secondAttribute="trailing" constant="5" id="Z4b-5W-xQ5"/>
                             <constraint firstItem="efl-qp-57U" firstAttribute="trailing" secondItem="HFa-vK-dWS" secondAttribute="trailing" constant="8" id="cNg-7v-oCa"/>
@@ -278,20 +291,32 @@
             </objects>
             <point key="canvasLocation" x="-1250" y="916"/>
         </scene>
-        <!--View Controller-->
+        <!--Coins View Controller-->
         <scene sceneID="0cj-pn-riT">
             <objects>
-                <viewController id="X8K-VO-1FT" sceneMemberID="viewController">
+                <viewController id="X8K-VO-1FT" customClass="CoinsViewController" customModule="GameChallenge_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Lh-rV-R3h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acT-10-v30">
+                                <rect key="frame" x="60" y="175" width="230" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="N0R-9S-W8a"/>
                     </view>
+                    <connections>
+                        <outlet property="coinsLabel" destination="acT-10-v30" id="QvN-Lh-xbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmO-Aa-jPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="915"/>
+            <point key="canvasLocation" x="-271.19999999999999" y="914.392803598201"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
