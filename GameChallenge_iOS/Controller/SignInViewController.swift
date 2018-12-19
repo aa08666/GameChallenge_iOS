@@ -44,10 +44,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let logindic = [
-            "name": "name",
-            "api_token": "token"
-        ]
+       
         
 //        APISystem.getData(json: dic) { (data) in
 //            print(data)

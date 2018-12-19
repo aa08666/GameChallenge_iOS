@@ -62,18 +62,42 @@
 		9061FA4721C77D6700696CED /* GameChallenge_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9061FA4821C77D6700696CED /* AppDelegate.swift */,
-				9061FA4A21C77D6700696CED /* ViewController.swift */,
-				9061FA4C21C77D6700696CED /* Main.storyboard */,
-				9061FA4F21C77D6800696CED /* Assets.xcassets */,
-				9061FA5121C77D6800696CED /* LaunchScreen.storyboard */,
+				90D39D5521CA212B009A2F0F /* Controller */,
+				90D39D5421CA20F9009A2F0F /* View */,
+				90D39D5321CA20D7009A2F0F /* Model */,
 				9061FA5421C77D6800696CED /* Info.plist */,
+			);
+			path = GameChallenge_iOS;
+			sourceTree = "<group>";
+		};
+		90D39D5321CA20D7009A2F0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9061FA4821C77D6700696CED /* AppDelegate.swift */,
+				90D39D5121C9DF39009A2F0F /* DecodeFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90D39D5421CA20F9009A2F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9061FA4C21C77D6700696CED /* Main.storyboard */,
+				9061FA5121C77D6800696CED /* LaunchScreen.storyboard */,
+				9061FA4F21C77D6800696CED /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90D39D5521CA212B009A2F0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9061FA4A21C77D6700696CED /* ViewController.swift */,
 				90D39D4921C8A20E009A2F0F /* SignUpViewController.swift */,
 				90D39D4D21C8C147009A2F0F /* SignInViewController.swift */,
 				90D39D4F21C8F80A009A2F0F /* CoinsViewController.swift */,
-				90D39D5121C9DF39009A2F0F /* DecodeFile.swift */,
 			);
-			path = GameChallenge_iOS;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

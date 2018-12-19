@@ -43,39 +43,48 @@ class SignUpViewController: UIViewController {
         save()
         print("123")
         
-        //解析JSON
+        //解析JSON，從95行的completeion(data)中的 data 傳入
         getData(from: "http://c86108bd.ngrok.io/api/register") { (data) in
-            print("Call API")
+//            print("Call API")
             
             let decoder = JSONDecoder()
-            if let testMsg = try? decoder.decode(TestMsg.self, from: data) {
-                print(testMsg.result)
-                print(testMsg.response)
+            if let RegisterBodyData = try? decoder.decode(RegisterBodyData.self, from: data) {
+                //下面搞混了，
+                print(RegisterBodyData.name)
+                print(RegisterBodyData.email)
+                print(RegisterBodyData.password)
+                print(RegisterBodyData.password_confirmation)
             }
-            if let correctMsg = try? decoder.decode(TestCorrectMsg.self, from: data) {
-                print(correctMsg.result)
+            if let RegisterSuccessResponse = try? decoder.decode(RegisterSuccessResponse.self, from: data) {
+                print(RegisterSuccessResponse.name)
+                print(RegisterSuccessResponse.result)
+                print(RegisterSuccessResponse.coin)
+                print(RegisterSuccessResponse.api_token)
+               
             }
             
         }
         
     }
-    
+    //轉成data
     func getData(from urlString: String, completeion: @escaping (Data) -> Void) {
         // 判斷 urlString 是否能被轉成 Url，若無法則 return，不繼續後面的操作。
         guard let url = URL(string: urlString) else { return }
         let json = [
-            "name": "ss12321321s",
-            "email": "qqq123213q@mail.com",
-            "password": "qqqqqq",
-            "password_confirmation": "qqqqqq"
+            "name": nameTextField,
+            "email": emailTextField,
+            "password": passwordTextField,
+            "password_confirmation": passwordConTextField
         ]
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         let data = try? JSONSerialization.data(withJSONObject: json, options: [])
         request.httpBody = data
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
         // 使用 URLSession.shared.data(with: url) 來獲取網址中的數據。
         URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
             // 如果 error 存在，印出錯誤訊息後，不接續後面操作。
             if error != nil {
                 print(error!.localizedDescription)

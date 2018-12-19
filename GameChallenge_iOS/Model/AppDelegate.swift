@@ -18,15 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        let url = URL(string: "https://cdn-images-1.medium.com/max/1250/1*-70IBZDhQvjcYHxs3q1epA.png")!
-//
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-//        request.httpBody
-//        request.addValue("applaction/json", forHTTPHeaderField: "Content-Type")
-//        let task = URLSession.shared.dataTask(with: <#T##URLRequest#>) { (<#Data?#>, <#URLResponse?#>, <#Error?#>) in
-//            <#code#>
-//        }
+
         return true
     }
 

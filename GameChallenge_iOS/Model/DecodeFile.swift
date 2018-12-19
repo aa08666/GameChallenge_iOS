@@ -7,18 +7,33 @@
 //
 
 import Foundation
-struct SignUp:Decodable {
-    var updatedAt:TimeInterval
-    var list:[SignUpData]
-    
-}
-struct SignUpData:Decodable {
+//struct SignUp:Decodable {
+//    var updatedAt:TimeInterval
+//    var list:[RegisterBodyData]
+//
+//}
+
+struct RegisterBodyData:Decodable {
     var name:String
     var email:String
     var password:String
     var password_confirmation:String
-    
 }
+struct RegisterSuccessResponse:Decodable {
+    var result:Bool
+    var name:String
+    var coin:Int
+    var api_token:String
+}
+struct RegisterErrorResponse:Decodable {
+    var result:Bool
+    var response:String
+}
+
+
+
+
+
 
 struct TestMsg: Decodable {
     var response: String
