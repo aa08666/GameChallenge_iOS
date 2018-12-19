@@ -50,16 +50,18 @@ class SignUpViewController: UIViewController {
             let decoder = JSONDecoder()
             if let RegisterBodyData = try? decoder.decode(RegisterBodyData.self, from: data) {
                 //下面搞混了，
-                print(RegisterBodyData.name)
-                print(RegisterBodyData.email)
-                print(RegisterBodyData.password)
-                print(RegisterBodyData.password_confirmation)
+                print(RegisterBodyData)
+//                print(RegisterBodyData.name)
+//                print(RegisterBodyData.email)
+//                print(RegisterBodyData.password)
+//                print(RegisterBodyData.password_confirmation)
             }
             if let RegisterSuccessResponse = try? decoder.decode(RegisterSuccessResponse.self, from: data) {
-                print(RegisterSuccessResponse.name)
-                print(RegisterSuccessResponse.result)
-                print(RegisterSuccessResponse.coin)
-                print(RegisterSuccessResponse.api_token)
+                print(RegisterSuccessResponse)
+//                print(RegisterSuccessResponse.name)
+//                print(RegisterSuccessResponse.result)
+//                print(RegisterSuccessResponse.coin)
+//                print(RegisterSuccessResponse.api_token)
                
             }
             
