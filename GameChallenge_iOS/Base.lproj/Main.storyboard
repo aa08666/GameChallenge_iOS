@@ -301,15 +301,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acT-10-v30">
-                                <rect key="frame" x="60" y="175" width="230" height="43"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OldMan" translatesAutoresizingMaskIntoConstraints="NO" id="CQ6-f0-X8X">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acT-10-v30">
+                                <rect key="frame" x="40" y="196" width="327" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" red="0.97680455450000003" green="0.75189955200000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="acT-10-v30" firstAttribute="leading" secondItem="N0R-9S-W8a" secondAttribute="leading" constant="40" id="NzD-d4-E9Q"/>
+                            <constraint firstItem="acT-10-v30" firstAttribute="top" secondItem="N0R-9S-W8a" secondAttribute="top" constant="132" id="ROr-Gm-Tqk"/>
+                            <constraint firstItem="N0R-9S-W8a" firstAttribute="trailing" secondItem="acT-10-v30" secondAttribute="trailing" constant="8" id="Y8x-59-8RV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="N0R-9S-W8a"/>
                     </view>
                     <connections>
@@ -397,11 +405,12 @@
     </scenes>
     <resources>
         <image name="Cmm" width="576" height="768"/>
+        <image name="OldMan" width="326" height="442"/>
         <image name="ch" width="2000" height="1569"/>
         <image name="hearthstone" width="3000" height="2000"/>
         <image name="icon" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FDP-ds-BHa"/>
+        <segue reference="CUq-K1-g3a"/>
     </inferredMetricsTieBreakers>
 </document>
