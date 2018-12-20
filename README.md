@@ -20,3 +20,6 @@
 ## 註冊登入畫面
 
 ![](https://i.imgur.com/CQGWm6o.png)
+
+## 代幣紀錄
+![](https://i.imgur.com/794dLVt.png)
