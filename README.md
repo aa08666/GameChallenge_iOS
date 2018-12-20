@@ -1,5 +1,4 @@
-# GameChallenge_iOS
-Ep1
+
 # Hearthstone draw cards.
 ## 遊戲方法
 #### 1.抽卡
